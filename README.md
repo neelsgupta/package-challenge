@@ -5,18 +5,18 @@ You would prefer to send a package which weighs less in case there is more than 
 
 # Input Sample
 Your API should accept as its first argument a path to a filename. The input file contains several lines. Each line is one test case.  
-Each line contains the weight that the package can take (before the colon) and the list of items you need to choose. Each item is enclosed in parentheses where the 1st number is a item’s index number, the 2nd is its weight and the 3rd is its cost. E.g. 
+Each line contains the weight that the package can take (before the colon) and the list of items you need to choose. Each item is enclosed in parentheses where the 1st number is a itemâ€™s index number, the 2nd is its weight and the 3rd is its cost. E.g. 
 
 # Input Example
 ```
-81 : (1,53.38,€45) (2,88.62,€98) (3,78.48,€3) (4,72.30,€76) (5,30.18,€9) (6,46.34,€48)
-8 : (1,15.3,€34)
-75 : (1,85.31,€29) (2,14.55,€74) (3,3.98,€16) (4,26.24,€55) (5,63.69,€52) (6,76.25,€75) (7,60.02,€74) (8,93.18,€35) (9,89.95,€78)
-56 : (1,90.72,€13) (2,33.80,€40) (3,43.15,€10) (4,37.97,€16) (5,46.81,€36) (6,48.77,€79) (7,81.80,€45) (8,19.36,€79) (9,6.76,€64)
+81 : (1,53.38,â‚¬45) (2,88.62,â‚¬98) (3,78.48,â‚¬3) (4,72.30,â‚¬76) (5,30.18,â‚¬9) (6,46.34,â‚¬48)
+8 : (1,15.3,â‚¬34)
+75 : (1,85.31,â‚¬29) (2,14.55,â‚¬74) (3,3.98,â‚¬16) (4,26.24,â‚¬55) (5,63.69,â‚¬52) (6,76.25,â‚¬75) (7,60.02,â‚¬74) (8,93.18,â‚¬35) (9,89.95,â‚¬78)
+56 : (1,90.72,â‚¬13) (2,33.80,â‚¬40) (3,43.15,â‚¬10) (4,37.97,â‚¬16) (5,46.81,â‚¬36) (6,48.77,â‚¬79) (7,81.80,â‚¬45) (8,19.36,â‚¬79) (9,6.76,â‚¬64)
 ```
 
 # Output sample
-For each set of items that you put into a package provide a new row in the output string (items’ index numbers are separated by comma). E.g.  
+For each set of items that you put into a package provide a new row in the output string (itemsâ€™ index numbers are separated by comma). E.g.  
 
 # Input Example
 ```
@@ -30,6 +30,6 @@ For each set of items that you put into a package provide a new row in the outpu
 You should write a class com.mobiquity.packer.Packer with a static API method named pack. This method accepts the absolute path to a test file as a String. The test file will be in UTF-8 format. The pack method returns the solution as a String. 
 
 Additional constraints:
-1. Max weight that a package can take is â‰¤ 100
+1. Max weight that a package can take is <= 100
 2. There might be up to 15 items you need to choose from
-3. Max weight and cost of an item is â‰¤ 100
+3. Max weight and cost of an item is <= 100
